@@ -1,11 +1,12 @@
 <div class="row">
   <div class="large-6 large-centered columns">
   	<hr>
-  	Welcome
+  	Welcome | <%= link_to 'New Post', new_post_path%>
   	<hr>
     <% @posts.each do |post|%>
-      <strong><%= link_to post.title, post_path(post) %></strong>
+      <strong><%= link_to post.title, post_path(post) %> <br><small>This post has <%= pluralize post.comments.size, ('comment') %></small></strong>
       <%= simple_format(post.content) %>
+
       <hr>
     <% end %>
   </div>
