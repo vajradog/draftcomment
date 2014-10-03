@@ -1,0 +1,17 @@
+<div class="large-6 large-centered columns">
+	
+		<%= link_to "Moderate #{pluralize @comments.draft.size, ('comment')}", post_comments_path(@post), class: "button alert small"%> <br>#you could hide this button with authorization.
+	</div> 
+	<br>
+	<div class="large-6 large-centered columns panel">
+		<h4>Comments</h4>
+
+  <% @comments.approved.each do |comment| %>
+    <font color="gray">
+    	<%= comment.creator %> about <%= time_ago_in_words(comment.created_at)%>
+   	</font>
+    <em><%= simple_format(comment.body) %></em>
+    <hr>
+  <% end %>
+</div>
+

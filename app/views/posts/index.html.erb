@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="large-6 large-centered columns">
+  	<hr>
+  	Welcome
+  	<hr>
+    <% @posts.each do |post|%>
+      <strong><%= link_to post.title, post_path(post) %></strong>
+      <%= simple_format(post.content) %>
+      <hr>
+    <% end %>
+  </div>
+</div>

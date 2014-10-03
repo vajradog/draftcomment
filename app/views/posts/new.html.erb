@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="large-6 columns">
+    <h5>New Post</h5>  
+    <%= form_for @post do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title %> <br>
+      <%= f.label :content %>
+      <%= f.text_area :content %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>

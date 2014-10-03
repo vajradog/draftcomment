@@ -1,0 +1,11 @@
+<%= form_for [@post, @comment] do |f| %>
+  <p align="center"><strong>POST</strong> <em>your</em> <strong>THOUGHTS</strong></p>
+  <%= f.text_field :creator, placeholder: 'Your name here' %> 
+  <%= f.text_area :body, rows: 90, placeholder: 'Type your thoughts here...' %> 
+  <small><font color="gray">Comments are moderated to ensure quality conversation. Your comment(s) will appear here when approved. </font></small> <br><br>
+
+  <%= f.submit "Post this comment", class: "button small" %> 
+
+<% end %>
+
+
