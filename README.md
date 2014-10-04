@@ -1,4 +1,4 @@
-Created this for a friend to demonstrate a simple way to set comments as 'draft' by default and then moderate them to 'approve'. Only 'approved' comments will appear to the site visitors.
+Simple way to set comments as 'draft' by default and then moderate them to 'approve'. Only 'approved' comments will appear to the site visitors.
 
 This quick demo is completely bare-bone rails app (except for Zurb Foundation) and has no authentication, validation etc. built in (which you would probably want for a real site). The purpose is just to demonstrate the simple method of moderating comments. No moderation gems, just plain logic.
 
@@ -114,4 +114,4 @@ You can also add a button (only accessible by you: admin) somewhere on the post 
 
 ```
 
-If I've missed anything.Fork/download the project, it's a working app.
+If I've missed anything. Fork/download the project, it's a working app.
