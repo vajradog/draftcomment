@@ -2,6 +2,8 @@ Created this for a friend to demonstrate a simple way to set comments as 'draft'
 
 This quick demo is completely bare-bone rails app (except for Zurb Foundation) and has no authentication, validation etc. built in (which you would probably want for a real site). The purpose is just to demonstrate the simple method of moderating comments. No moderation gems, just plain logic.
 
+##usage
+
 Assuming you have a Comment model nested under Post, create a migration and add 'status' to it, you could really name it whatever you like.
 
 ```
