@@ -111,4 +111,7 @@ You can also add a button (only accessible by you: admin) somewhere on the post 
 
 ```
 <%= link_to "Moderate #{pluralize @comments.draft.size, ('comment')}", post_comments_path(@post), class: "button alert small"%>
-	
+
+```
+
+If I've missed anything.Fork/download the project, it's a working app.
